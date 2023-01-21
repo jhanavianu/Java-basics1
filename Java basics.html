@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java 1</title>
+
+<style>
+    body{
+        background-color: rgb(247, 218, 218);
+        font-size: 24px;
+    }
+</style>
+
+</head>
+<body>
+    
+    <button onclick="erase()"> DO NOT CLICK!!</button>
+<p>
+    Have a great day :)
+</p>
+
+
+
+<script>
+    var number1 = prompt("Give me any number:");
+    document.write ("The Half of  " + number1 +  "is");
+   document.write (number1/2 + "<br>");
+
+   
+    if (number1){
+        document.write("Hemlooooo <br> ");
+
+    } else {
+        document.write("buieeee <br> ");
+    } 
+    
+    
+    
+    var n = 0;
+    var n1 = 1;
+    var n2;
+
+for (let i = 1; i <number1; i++)
+{
+n2= n1 + n;
+document.write (n + "<br>" );
+n = n1;
+n1 = n2;
+}
+
+function erase(){
+
+    let paragraphs = document.querySelectorAll("p");
+    console.log(paragraphs)
+
+for(var i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].innerHTML = " Told you not to click!!You're gonna fall in next hour";
+}
+}
+</script>
+</body>
+</html>
